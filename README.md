@@ -1,23 +1,21 @@
-# Urban Routes - Pruebas Automatizadas con Selenium y Pytest
+# Urban Routes - Sprint 8
 
-Este proyecto contiene pruebas automatizadas para la plataforma Urban Routes usando `selenium` y `pytest`.
+Este proyecto automatiza el flujo para pedir un taxi en una aplicación de transporte.
 
-## 📦 Requisitos
-- Python 3.x
+## Integrantes
+
+- **Nombre:** Juan Camilo Jaimes
+- **Cohorte:** Sprint 8 Grupo 19
+
+## Tecnologías usadas
+
 - Selenium
 - Pytest
+- Python
 
-## 🚀 Configuración del Proyecto
-1. Clonar este repositorio:
+## Instrucciones para ejecutar las pruebas
+
+1. Asegúrate de tener Python instalado.
+2. Activa tu entorno virtual (si no está activo):
    ```bash
-   git clone <URL-DEL-REPO>
-
----
-
-## **🎯 Paso 8: Probar tu proyecto**
-Ahora vamos a probar que todo funcione correctamente.
-
-1. **Abre la terminal de nuevo.**
-2. Escribe el siguiente comando:
-   ```bash
-   pytest
+   source .venv/bin/activate
