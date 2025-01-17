@@ -1,21 +1,23 @@
-# Urban Routes - Sprint 8
+# Urban Routes Automation Testing
 
-Este proyecto automatiza el flujo para pedir un taxi en una aplicación de transporte.
+Este proyecto contiene pruebas automatizadas para el proceso completo de solicitar un taxi, incluyendo la configuración de direcciones, selección de tarifa, validación de números telefónicos, agregar métodos de pago y más.
 
-## Integrantes
+## Descripción del Proyecto
 
-- **Nombre:** Juan Camilo Jaimes
-- **Cohorte:** Sprint 8 Grupo 19
+El proyecto fue desarrollado como parte del Sprint 8 del curso **Grupo 19 - QA Automation**. Incluye pruebas automatizadas para validar diferentes acciones en el flujo de un sistema de reserva de taxis.
 
-## Tecnologías usadas
+## Desarrollado
 
-- Selenium
-- Pytest
-- Python
+Juan Camilo Jaimes
 
-## Instrucciones para ejecutar las pruebas
+## Tecnologías Utilizadas
 
-1. Asegúrate de tener Python instalado.
-2. Activa tu entorno virtual (si no está activo):
+- **Python 3.13**: Lenguaje de programación para el desarrollo de pruebas.
+- **Selenium**: Herramienta para la automatización de navegadores.
+- **pytest**: Framework para la ejecución de pruebas automatizadas.
+
+## Instrucciones para Ejecutar las Pruebas
+
+1. **Clonar el repositorio**
    ```bash
-   source .venv/bin/activate
+   git clone https://github.com/JuanCJaimes/qa-project-Urban-Routes-es.git

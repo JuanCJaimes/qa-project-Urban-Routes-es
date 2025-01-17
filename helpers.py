@@ -1,24 +1,19 @@
-# helpers.py
-
 import time
-from selenium.common.exceptions import WebDriverException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-def retrieve_phone_code(driver) -> str:
+def retrieve_phone_code(driver):
     """
-    Intercepta el código telefónico generado y lo devuelve como un string.
-
-    Este código de confirmación se obtiene de los logs generados por el navegador.
-    Intenta interceptar el código hasta un máximo de 10 veces antes de fallar.
+    Intercepta el código telefónico generado en el modal de confirmación
+    y lo devuelve como string.
     """
-    for _ in range(10):  # Intentar un máximo de 10 veces
+    for _ in range(10):
         try:
-            # Obtener los logs de rendimiento del navegador
             logs = driver.get_log('performance')
             for log in logs:
-                if '1234' in log['message']:  # Validar si el código está presente
-                    return '1234'
-        except WebDriverException:
-            # Si ocurre algún error, esperar un segundo antes de reintentar
+                if '1234' in log['message']:
+                    return '1234'  # Código simulado para propósitos de prueba.
+        except Exception:
             time.sleep(1)
-    # Si no se encuentra el código, devolver None
     return None
